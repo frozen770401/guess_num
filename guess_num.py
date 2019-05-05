@@ -1,6 +1,11 @@
 import random
 
-r = random.randint(1, 100)
+start_num = input('請輸入亂數起始值: ')
+end_num = input('請輸入亂數終結值: ')
+start_num = int(start_num)
+end_num = int(end_num)
+
+r = random.randint(start_num, end_num)
 guess = 0
 count = 0
 while guess != r:
